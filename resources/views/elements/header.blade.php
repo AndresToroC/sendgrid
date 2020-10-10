@@ -48,12 +48,15 @@
                     <li class="nav-item">
                         <a href="{{route('home')}}" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a href="{{route('groups.index')}}" class="nav-link"><i class="fas fa-list"></i> Grupos</a>
+                    </li>
+                    {{-- <li class="nav-item dropdown">
                         <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fas fa-calendar"></i> Components</a>
                         <div class="dropdown-menu dropdown-menu-arrow">
                             <a href="" class="dropdown-item ">Example</a>
                         </div>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>

@@ -8,6 +8,8 @@ Auth::routes(['register' => true]);
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::resource('groups', 'GroupController');
 });
 
 Route::get('/logout', function() {
