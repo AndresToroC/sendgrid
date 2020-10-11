@@ -11,6 +11,8 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('groups', 'GroupController');
     Route::resource('groups.contacts', 'ContactController');
+
+    Route::resource('groups.sendemails', 'SendEmailController');
 });
 
 Route::get('/logout', function() {
