@@ -11,6 +11,7 @@
     
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"> 
         <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
         @yield('styles')
         <script src="{{asset('js/fonst.js')}}"></script>
@@ -39,5 +40,9 @@
     </body>
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
+
+
+    <!-- include summernote css/js -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     @yield('scripts')
 </html>

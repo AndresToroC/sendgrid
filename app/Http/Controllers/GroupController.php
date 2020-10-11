@@ -24,11 +24,12 @@ class GroupController extends Controller
     public function store(Request $request)
     {
         $rules = [
-            'name' => 'required|max:255'
+            'name' => 'required|max:255',
+            'theme' => 'required'
         ];
 
         $request->validate($rules);
-
+        
         Group::create($request->all());
 
         $message = ['type' => 'success', 'text' => 'Grupo creado correctamente'];
@@ -50,7 +51,8 @@ class GroupController extends Controller
     public function update(Request $request, Group $group)
     {
         $rules = [
-            'name' => 'required|max:255'
+            'name' => 'required|max:255',
+            'theme' => 'required'
         ];
 
         $request->validate($rules);

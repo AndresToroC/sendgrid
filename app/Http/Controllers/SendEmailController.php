@@ -49,11 +49,7 @@ class SendEmailController extends Controller
             $send_email->addTo($emails['email']);
         }
         
-        $send_email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-        $send_email->addContent(
-            "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-        );
-        
+        $send_email->addContent("text/html", $group->theme);
         $sendgrid = new \SendGrid(env('SENDGRID_API_KEY'));
         
         $message = [];
